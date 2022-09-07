@@ -1,0 +1,152 @@
+/*Cartes des restaurants*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/*header*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-arrow {
+        position:relative
+    }
+    i {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+}
+.picture-restaurant {
+    img{
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    position: relative;
+    }
+}
+
+.title-restaurant {
+    font-family: 'Shrikhand', sans-serif;
+    margin-bottom: 25px;
+    .heart {
+        position: absolute;
+        left: 85%;
+        top: 21px;
+        cursor: pointer;
+        &_1 {
+            position: relative;
+            &:hover {
+                animation: heart-no-opacity 2s;
+            }
+        }
+        &_2 {
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+            color: #fff;
+            &:hover {
+                animation: heart-opacity 2s forwards;
+            }
+        }
+    }
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.delay {
+    &-entrees{
+    animation: fadein 2s;}
+    &-plats {
+        animation: fadein 5s;}
+    &-desserts {
+        animation: fadein 8s;}
+}
+
+.card-restaurant {
+    position: relative;
+    margin-top: -50px;
+    padding: 20px 10px 0 15px;
+    border-radius: 25px 25px 0 0;
+    background-color: #f6f6f6;
+}
+
+.title-card::after {
+    content: "";
+    display: flex;
+    width: 45px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: $tertiary;
+    margin-bottom: 20px; 
+}
+.title-card_menu {
+    font-size: 20px !important;
+    font-weight: normal;
+}
+
+.contenu-global {
+    display: flex;
+    justify-content: space-between;
+    &-card {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        background-color: #fff;
+        width: 300px;
+        max-width: 100%;
+        height: 50px;
+        box-shadow: 2px 1px 10px grey;
+        border-radius: 18px;
+        padding: 10px 20px 10px 10px;
+        line-height: 23px;
+        &-name {
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 250px;
+            text-overflow: ellipsis;
+        }
+        &-price {
+            align-self: flex-end;
+            font-weight: bold;
+            margin-left: 5px;
+            margin-bottom: 7px;
+        }
+        // .check {
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     background-color: $tertiary;
+        //     color: #fff;
+        //     width: 35px;
+        //     margin-right: -62px;
+        //     opacity: 1;
+        // }
+    }
+}
+
+.order-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 60px;
+    &_pink {
+        padding: 20px 60px;
+        border-radius: 30px;
+        background-image: linear-gradient($secondary, $primary);
+        border: none;
+        font-weight: bold;
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .global-choice {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
