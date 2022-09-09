@@ -485,32 +485,62 @@ footer .footer-logo {
 
 .contenu-global {
   display: flex;
-  justify-content: space-between;
+  justify-content: column;
 }
 .contenu-global-card {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 25px;
   background-color: #fff;
   width: 300px;
-  max-width: 100%;
-  height: 50px;
+  height: 60px;
   box-shadow: 2px 1px 10px grey;
   border-radius: 18px;
-  padding: 10px 20px 10px 10px;
-  line-height: 23px;
+  padding: 0px 20px 10px 10px;
+  line-height: 25px;
+  overflow: hidden;
+  cursor: pointer;
 }
 .contenu-global-card-name {
-  white-space: nowrap;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px 10px 0 0;
   max-width: 250px;
+}
+.contenu-global-card h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.contenu-global-card p {
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .contenu-global-card-price {
-  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-weight: bold;
-  margin-left: 5px;
-  margin-bottom: 7px;
+  padding: 10px;
+}
+.contenu-global-card-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: #fff;
+  height: 70px;
+  width: 60px;
+  padding-top: none;
+  margin-right: -60px;
+}
+.contenu-global-card:hover .contenu-global-card-check {
+  margin-right: -20px;
+}
+.contenu-global-card:hover .check {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 .order-button {
