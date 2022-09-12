@@ -483,11 +483,11 @@ footer .footer-logo {
   font-weight: normal;
 }
 
-.contenu-global {
+.contenu {
   display: flex;
   justify-content: column;
 }
-.contenu-global-card {
+.contenu-card {
   display: flex;
   margin-bottom: 25px;
   background-color: #fff;
@@ -500,7 +500,7 @@ footer .footer-logo {
   overflow: hidden;
   cursor: pointer;
 }
-.contenu-global-card-name {
+.contenu-card-name {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -508,26 +508,26 @@ footer .footer-logo {
   padding: 10px 10px 0 0;
   max-width: 250px;
 }
-.contenu-global-card h3 {
+.contenu-card h3 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-bottom: 5px;
 }
-.contenu-global-card p {
+.contenu-card p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-bottom: 10px;
 }
-.contenu-global-card-price {
+.contenu-card-price {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   font-weight: bold;
   padding: 10px;
 }
-.contenu-global-card-check {
+.contenu-card-check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -539,10 +539,10 @@ footer .footer-logo {
   margin-right: -60px;
   transition-duration: 1s;
 }
-.contenu-global-card:hover .contenu-global-card-check {
+.contenu-card:hover .contenu-card-check {
   margin-right: 0px;
 }
-.contenu-global-card:hover .check {
+.contenu-card:hover .check {
   transform: rotate(360deg);
   transition-duration: 1s;
 }
@@ -561,6 +561,7 @@ footer .footer-logo {
   font-weight: bold;
   color: #fff;
   font-size: 20px;
+  cursor: pointer;
 }
 
 @media all and (min-width: 600px) {

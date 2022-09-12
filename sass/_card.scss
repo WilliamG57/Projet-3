@@ -1,4 +1,5 @@
 /*Cartes des restaurants*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 /*header*/
@@ -91,7 +92,7 @@
     font-weight: normal;
 }
 
-.contenu-global {
+.contenu {
     display: flex;
     justify-content: column;
     &-card {
@@ -152,11 +153,7 @@
         }
     }
 
-    // &-slide-effect {
-    //     animation: slide-bottom 1.5s 3s ease-in-out both;
-    // }
-
-    &-card:hover .contenu-global-card-check {
+    &-card:hover .contenu-card-check {
         margin-right: 0px;
     }
 
@@ -165,19 +162,6 @@
         transition-duration: 1s;
     }
 }
-
-// @keyframes slide-bottom {
-//     0% {
-//         transform: translateY(50px);
-//         filter: blur(1px);
-//         opacity: 0;
-//     }
-//     100% {
-//         transform: translateY(0px);
-//         filter: blur(0);
-//         opacity: 1;
-//     }
-// }
 
 .order-button {
     display: flex;
@@ -193,6 +177,7 @@
         font-weight: bold;
         color: #fff;
         font-size: 20px;
+        cursor: pointer;
     }
 }
 
