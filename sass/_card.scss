@@ -16,6 +16,7 @@
         top: 10%;
     }
 }
+
 .picture-restaurant {
     img{
     width: 100%;
@@ -33,12 +34,14 @@
         left: 85%;
         top: 21px;
         cursor: pointer;
+
         &_1 {
             position: relative;
             &:hover {
                 animation: heart-no-opacity 2s;
             }
         }
+
         &_2 {
             position: absolute;
             top: 0px;
@@ -82,6 +85,7 @@
     background-color: $tertiary;
     margin-bottom: 20px; 
 }
+
 .title-card_menu {
     font-size: 20px !important;
     font-weight: normal;
@@ -151,6 +155,7 @@
     &-card:hover .contenu-global-card-check {
         margin-right: -20px;
     }
+
     &-card:hover .check {
         transform: rotate(360deg);
         transition-duration: 1s;
@@ -175,6 +180,7 @@
     justify-content: center;
     margin-top: 30px;
     padding-bottom: 60px;
+    
     &_pink {
         padding: 20px 60px;
         border-radius: 30px;
