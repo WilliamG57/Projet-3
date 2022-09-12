@@ -63,9 +63,9 @@
     &-entrees{
     animation: fadein 2s;}
     &-plats {
-        animation: fadein 5s;}
+        animation: fadein 4s;}
     &-desserts {
-        animation: fadein 8s;}
+        animation: fadein 6s;}
 }
 
 .card-restaurant {
@@ -99,10 +99,10 @@
         margin-bottom: 25px;
         background-color: #fff;
         width: 300px;
-        height: 60px;
+        height: 70px;
         box-shadow: 2px 1px 10px grey;
         border-radius: 18px;
-        padding: 0px 20px 10px 10px;
+        padding-left: 15px;
         line-height: 25px;
         overflow: hidden;
         cursor: pointer;
@@ -111,6 +111,7 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
+            overflow: hidden;
             padding: 10px 10px 0 0;
             max-width: 250px;
         }
@@ -119,12 +120,14 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            padding-bottom: 5px;
         }
 
         p {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            padding-bottom: 10px;
         }
 
         &-price {
@@ -145,6 +148,7 @@
             width: 60px;
             padding-top: none;
             margin-right: -60px;
+            transition-duration: 1s;
         }
     }
 
@@ -153,7 +157,7 @@
     // }
 
     &-card:hover .contenu-global-card-check {
-        margin-right: -20px;
+        margin-right: 0px;
     }
 
     &-card:hover .check {
@@ -180,7 +184,7 @@
     justify-content: center;
     margin-top: 30px;
     padding-bottom: 60px;
-    
+
     &_pink {
         padding: 20px 60px;
         border-radius: 30px;

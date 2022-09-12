@@ -452,12 +452,12 @@ footer .footer-logo {
           animation: fadein 2s;
 }
 .delay-plats {
-  -webkit-animation: fadein 5s;
-          animation: fadein 5s;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
 }
 .delay-desserts {
-  -webkit-animation: fadein 8s;
-          animation: fadein 8s;
+  -webkit-animation: fadein 6s;
+          animation: fadein 6s;
 }
 
 .card-restaurant {
@@ -492,10 +492,10 @@ footer .footer-logo {
   margin-bottom: 25px;
   background-color: #fff;
   width: 300px;
-  height: 60px;
+  height: 70px;
   box-shadow: 2px 1px 10px grey;
   border-radius: 18px;
-  padding: 0px 20px 10px 10px;
+  padding-left: 15px;
   line-height: 25px;
   overflow: hidden;
   cursor: pointer;
@@ -504,6 +504,7 @@ footer .footer-logo {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow: hidden;
   padding: 10px 10px 0 0;
   max-width: 250px;
 }
@@ -511,11 +512,13 @@ footer .footer-logo {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding-bottom: 5px;
 }
 .contenu-global-card p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding-bottom: 10px;
 }
 .contenu-global-card-price {
   display: flex;
@@ -534,9 +537,10 @@ footer .footer-logo {
   width: 60px;
   padding-top: none;
   margin-right: -60px;
+  transition-duration: 1s;
 }
 .contenu-global-card:hover .contenu-global-card-check {
-  margin-right: -20px;
+  margin-right: 0px;
 }
 .contenu-global-card:hover .check {
   transform: rotate(360deg);
