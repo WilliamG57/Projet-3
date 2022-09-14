@@ -491,7 +491,7 @@ footer .footer-logo {
   display: flex;
   margin-bottom: 25px;
   background-color: #fff;
-  width: 300px;
+  width: 340px;
   height: 70px;
   box-shadow: 2px 1px 10px grey;
   border-radius: 18px;
@@ -506,7 +506,7 @@ footer .footer-logo {
   flex-grow: 1;
   overflow: hidden;
   padding: 10px 10px 0 0;
-  max-width: 250px;
+  max-width: 285px;
 }
 .contenu-card h3 {
   overflow: hidden;
@@ -535,8 +535,7 @@ footer .footer-logo {
   color: #fff;
   height: 70px;
   width: 60px;
-  padding-top: none;
-  margin-right: -60px;
+  margin-right: -90px;
   transition-duration: 1s;
 }
 .contenu-card:hover .contenu-card-check {
