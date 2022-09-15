@@ -10,6 +10,8 @@
 .scale:hover {
   transition: transform 0.5s;
   transform: scale(1.07);
+  opacity: 0.8;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 a {
@@ -104,7 +106,7 @@ a {
 /*Header*/
 header {
   width: 100%;
-  box-shadow: 0 0 0.5em black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   padding: 20px 0px;
 }
 header .logo {
@@ -119,7 +121,7 @@ header .logo img {
 .localisation {
   display: flex;
   justify-content: center;
-  padding: 18px 0;
+  padding: 16px 0;
   background-color: #eaeaea;
   font-weight: bold;
 }
@@ -410,6 +412,7 @@ footer .footer-logo {
   position: absolute;
   left: 85%;
   top: 21px;
+  font-size: 20px;
   cursor: pointer;
 }
 .title-restaurant .heart_1 {
@@ -485,7 +488,6 @@ footer .footer-logo {
 
 .contenu {
   display: flex;
-  justify-content: column;
 }
 .contenu-card {
   display: flex;

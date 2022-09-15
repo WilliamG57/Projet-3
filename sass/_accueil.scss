@@ -12,7 +12,9 @@ $tertiary: #99E2D0;
 
 .scale:hover {
     transition: transform .5s;
-    transform: scale(1.07);
+    transform: scale(1.07); 
+    opacity: 0.8;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 25%);
 }
 
 a {
@@ -87,7 +89,7 @@ a {
 
 header {
     width: 100%;
-    box-shadow: 0 0 0.5em black;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
     padding: 20px 0px;
 
     .logo {
@@ -103,7 +105,7 @@ header {
 .localisation {
     display: flex;
     justify-content: center;
-    padding: 18px 0;
+    padding: 16px 0;
     background-color: #eaeaea;
     font-weight: bold;
 

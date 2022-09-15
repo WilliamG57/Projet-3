@@ -34,6 +34,7 @@
         position: absolute;
         left: 85%;
         top: 21px;
+        font-size: 20px;
         cursor: pointer;
 
         &_1 {
@@ -94,7 +95,6 @@
 
 .contenu {
     display: flex;
-    justify-content: column;
     &-card {
         display: flex;
         margin-bottom: 25px;
