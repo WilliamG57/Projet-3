@@ -14,7 +14,7 @@ $tertiary: #99E2D0;
     transition: transform .5s;
     transform: scale(1.07); 
     opacity: 0.8;
-    box-shadow: 5px 5px 20px rgb(0 0 0 / 25%);
+    box-shadow: 5px 5px 30px rgb(0 0 0 / 25%);
 }
 
 a {
@@ -178,6 +178,9 @@ header {
         &:hover {
             background-color: #f5edff;
             transform: scale(1.07);
+            .fas {
+                color: $primary;
+            }
         }
     }
     &-number {

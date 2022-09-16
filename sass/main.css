@@ -11,7 +11,7 @@
   transition: transform 0.5s;
   transform: scale(1.07);
   opacity: 0.8;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
 }
 
 a {
@@ -190,6 +190,9 @@ header .logo img {
 .functioning-propose:hover {
   background-color: #f5edff;
   transform: scale(1.07);
+}
+.functioning-propose:hover .fas {
+  color: #9356dc;
 }
 .functioning-number {
   color: #fff;
