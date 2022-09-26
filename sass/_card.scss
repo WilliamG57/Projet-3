@@ -157,7 +157,8 @@
     }
 
     &-card:hover .check {
-        transform: rotate(1turn);
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
         transition-duration: 1s;
     }
 }
